@@ -2,7 +2,7 @@
 let count = 0;
 
 const value = document.querySelector('#value');
-const buttons = document.querySelector('.btn');
+const buttons = document.querySelectorAll('.btn');
 // console.log(buttons);
 
 buttons.forEach(function (button) {
