@@ -11,7 +11,12 @@ buttons.forEach(function (button) {
     const styles = event.currentTarget.classList;
     if(styles.contains('decrease')) {
       count--;
+    } else if (styles.contains('increase')) {
+      count++;
+    } else {
+      count = 0;
     }
+
     value.textContent = count;
   });
 });
