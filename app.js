@@ -1,6 +1,8 @@
 // innitial count
 let count = 0;
 
+const ken = document.querySelector('#ken')
+const ryu = document.querySelector('#ryu')
 const value = document.querySelector('#value');
 const buttons = document.querySelectorAll('.btn');
 // console.log(buttons);
@@ -25,6 +27,19 @@ buttons.forEach(function (button) {
     if (count == 0) {
       value.style.color = 'var(--clr-grey-1)';
     }
+    if (count == 3) {
+      ken.style.display = 'inline';
+    } else {
+      ken.style.display = 'none';
+    }
+    if (count == -3) {
+      ryu.style.display = 'inline';
+    } else {
+      ryu.style.display = 'none';
+    }
+
+
+
     value.textContent = count;
   });
 });

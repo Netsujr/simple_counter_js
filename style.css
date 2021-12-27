@@ -182,3 +182,29 @@ main {
   color: var(--clr-white);
   background: var(--clr-black);
 }
+
+.middle-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#value {
+  position: relative;
+}
+
+.gif {
+  height: 25px;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+}
+
+#ken {
+  display: none;
+}
+
+#ryu {
+  display: none;
+}
